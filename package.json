@@ -2,11 +2,18 @@
   "name": "your-face",
   "author": "Housssam Haidar",
   "private": true,
+  "scripts": {
+    "start": "npm install && node app.js"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-bower-task": "~0.3.2",
     "grunt-contrib-less": "~0.8.1",
     "grunt-lint-pattern": "~0.1.4",
     "grunt-contrib-watch": "~0.5.3"
+  },
+  "dependencies": {
+    "express": "~3.5.1",
+    "nunjucks": "~1.0.4"
   }
 }
