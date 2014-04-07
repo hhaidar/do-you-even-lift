@@ -4,6 +4,7 @@
 
 @import 'vendor/lesshat.less';
 @import 'vendor/font-awesome/font-awesome.less';
+@import 'animations.less';
 
 @font-face {
     font-family: 'Open Sans';
@@ -46,10 +47,12 @@ body {
 }
 
 .yf-person {
+    background-image: url('../img/python.png');
     position: relative;
-    .user-select(none);
     cursor: -webkit-grab;
     cursor: -moz-grab;
+    .user-select(none);
+    .animation(background-move 200s linear infinite);
     &:active {
         cursor: -webkit-grabbing;
         cursor: -moz-grabbing;

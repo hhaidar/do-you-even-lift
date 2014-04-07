@@ -1336,6 +1336,14 @@
 .fa-plus-square-o:before {
   content: "\f196";
 }
+@-webkit-keyframes background-move {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0 -500%;
+  }
+}
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -1373,13 +1381,18 @@ body {
   left: 0;
 }
 .yf-person {
+  background-image: url('../img/python.png');
   position: relative;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
+  -webkit-animation: background-move 200s linear infinite;
+  -moz-animation: background-move 200s linear infinite;
+  -o-animation: background-move 200s linear infinite;
+  animation: background-move 200s linear infinite;
 }
 .yf-person:active {
   cursor: -webkit-grabbing;
