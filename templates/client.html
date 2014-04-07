@@ -22,14 +22,14 @@
                     <img src="assets/pictures/{$ person.picture || 'anonymoose.jpg' $}" alt="{$ person.firstname $} {$ person.lastname $}" />
                 </div>
                 <div class="yf-person-meta">
-                    <h2 class="yf-person-name" data-fittext=".6">{$ person.firstname $}</h2>
-                    <h2 class="yf-person-name" data-fittext=".5">{$ person.lastname $}</h2>
-                    <h3 class="yf-person-title" data-fittext="1.4">{$ person.title $}</h3>
-                    <div class="yf-person-socials" data-fittext="1.9">
-                        <span class="yf-person-social" >
+                    <h2 class="yf-person-name" data-fittext="{$ person.scale.firstname || '.6' $}">{$ person.firstname $}</h2>
+                    <h2 class="yf-person-name" data-fittext="{$ person.scale.lastname || '.5' $}">{$ person.lastname $}</h2>
+                    <h3 class="yf-person-title" data-fittext="{$ person.scale.title || '1.4' $}">{$ person.title $}</h3>
+                    <div class="yf-person-socials" data-fittext="{$ person.scale.social || '1.9' $}">
+                        <span class="yf-person-social" ng-if="person.twitter">
                             <i class="fa fa-twitter"></i> {$ person.twitter $}
                         </span> 
-                        <span class="yf-person-social">
+                        <span class="yf-person-social" ng-if="person.github">
                             <i class="fa fa-github"></i> {$ person.github $}
                         </span>
                     </div>

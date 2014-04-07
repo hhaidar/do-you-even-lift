@@ -16,5 +16,16 @@
         "twitter": "@letstweetbro",
         "github": "hhaidar",
         "picture": "houssam.jpg"
+    },
+    {
+        "id": "jarl",
+        "firstname": "Jarl",
+        "lastname": "Stefansson",
+        "title": "Dev-ops Jesus",
+        "github": "jalli",
+        "picture": "jarl.jpg",
+        "scale": {
+            "lastname": 0.7
+        }
     }
 ]

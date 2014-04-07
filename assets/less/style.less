@@ -45,6 +45,10 @@ body {
     left: 0;
 }
 
+.yf-person {
+    position: relative;
+}
+
 .yf-person-picture {
     .size(50%, 100%);
     position: absolute;
@@ -52,12 +56,22 @@ body {
         .size(100%);
         object-fit: cover;
     }
+    .yf-person:nth-child(even) & {
+        right: 0;
+    }
 }
 
 .yf-person-meta {
     margin-top: 5%;
     margin-left: 50%;
     padding-left: 40px;
+    .yf-person:nth-child(even) & {
+        text-align: right;
+        margin-left: auto;
+        margin-right: 50%;
+        padding-left: auto;
+        padding-right: 40px;
+    }
 }
 
 .yf-person-names {
