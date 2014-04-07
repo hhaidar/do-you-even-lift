@@ -1,6 +1,19 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), url('../font/open-sans.woff') format('woff');
+}
+@font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster'), url('../font/lobster.woff') format('woff');
+}
 html,
 body {
   height: 100%;
+  font-family: 'Open Sans';
   padding: 0;
   margin: 0;
 }
@@ -17,9 +30,24 @@ body {
   top: 0;
   left: 0;
 }
-.yf-people {
-  background: orange;
+.yf-person-picture {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
 }
-.yf-person {
-  background: red;
+.yf-person-meta {
+  margin-top: 5%;
+  margin-left: 50%;
+  padding-left: 40px;
+}
+.yf-person-names {
+  width: 100%;
+}
+.yf-person-name {
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0;
 }

@@ -9,14 +9,17 @@
     <script src="assets/js/vendor/underscore/underscore.js" type="text/javascript"></script>
     <script src="assets/js/vendor/angular/angular.js" type="text/javascript"></script>
     <script src="assets/js/vendor/angular-resource/angular-resource.js" type="text/javascript"></script>
+    <script src="assets/js/vendor/ng-FitText.js/ng-FitText.js" type="text/javascript"></script>
     <script src="assets/js/client.js"></script>
 </head>
     <body ng-app="yourFace" ng-controller="yourFaceController">
-        <ul class="yf-people" ng-repeat="person in people">
+        <ul class="yf-people" ng-repeat="person in people | limitTo: 1">
             <li class="yf-person">
-                {$ person.id $}
-                {$ person.firstname $}
-                {$ person.lastname $}
+                <img class="yf-person-picture" src="assets/pictures/{$ person.picture $}" alt="{$ person.firstname $} {$ person.lastname $}" />
+                <div class="yf-person-meta">
+                    <h2 class="yf-person-name" data-fittext=".5">{$ person.firstname $}</h2>
+                    <h2 class="yf-person-name" data-fittext=".5">{$ person.lastname $}</h2>
+                </div>
             </li>
         </ul>
     </body>
