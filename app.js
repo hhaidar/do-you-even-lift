@@ -4,9 +4,15 @@
 
 var fs = require('fs'),
     express = require('express'),
-    nunjucks = require('nunjucks');
+    nunjucks = require('nunjucks'),
+    program = require('commander');
 
 var app = express();
+
+program
+  .version('0.0.1')
+  .option('-p, --port [number]', 'Listen on a port [5000]')
+  .parse(process.argv);
 
 app.use('/assets', express.static(__dirname + '/assets'));
 
@@ -29,4 +35,4 @@ app.get('/people', function(req, res) {
     });
 });
 
-app.listen(5000);
+app.listen(program.port || 5000);
