@@ -1374,6 +1374,16 @@ body {
 }
 .yf-person {
   position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+}
+.yf-person:active {
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
 }
 .yf-person-picture {
   width: 50%;
@@ -1389,9 +1399,15 @@ body {
   right: 0;
 }
 .yf-person-meta {
-  margin-top: 5%;
   margin-left: 50%;
   padding-left: 40px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .yf-person:nth-child(even) .yf-person-meta {
   text-align: right;

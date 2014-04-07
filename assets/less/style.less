@@ -47,6 +47,13 @@ body {
 
 .yf-person {
     position: relative;
+    .user-select(none);
+    cursor: -webkit-grab;
+    cursor: -moz-grab;
+    &:active {
+        cursor: -webkit-grabbing;
+        cursor: -moz-grabbing;
+    }
 }
 
 .yf-person-picture {
@@ -62,9 +69,11 @@ body {
 }
 
 .yf-person-meta {
-    margin-top: 5%;
     margin-left: 50%;
     padding-left: 40px;
+    position: relative;
+    top: 50%;
+    .transform(translateY(-50%));
     .yf-person:nth-child(even) & {
         text-align: right;
         margin-left: auto;
