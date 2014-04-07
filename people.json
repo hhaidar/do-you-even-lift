@@ -11,6 +11,10 @@
     {
         "id": "haidar",
         "firstname": "Houssam",
-        "lastname": "Haidar"
+        "lastname": "Haidar",
+        "title": "Chicken dinner or somethin'",
+        "twitter": "@letstweetbro",
+        "github": "hhaidar",
+        "picture": "houssam.jpg"
     }
 ]

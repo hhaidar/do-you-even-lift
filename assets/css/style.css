@@ -1359,12 +1359,15 @@ body {
 body {
   background-image: url('../img/simple-dashed.png');
 }
+.rn-carousel-container,
 .yf-people,
 .yf-person {
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+}
+.yf-people {
   position: absolute;
   top: 0;
   left: 0;
@@ -1372,8 +1375,12 @@ body {
 .yf-person-picture {
   width: 50%;
   height: 100%;
-  object-fit: cover;
   position: absolute;
+}
+.yf-person-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .yf-person-meta {
   margin-top: 5%;

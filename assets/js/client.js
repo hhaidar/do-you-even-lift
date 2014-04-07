@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('yourFace', ['ngResource', 'ngFitText'])
+angular.module('yourFace', ['ngResource', 'ngFitText', 'angular-carousel'])
     .config(function($interpolateProvider, $httpProvider) {
         $interpolateProvider.startSymbol('{$');
         $interpolateProvider.endSymbol('$}');
