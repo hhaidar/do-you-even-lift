@@ -3,6 +3,9 @@
         "id": "wolever",
         "firstname": "David",
         "lastname": "Wolever",
+        "title": "Director, Python Canada",
+        "twitter": "@wolever",
+        "github": "wolever",
         "picture": "david.jpg"
     },
     {
