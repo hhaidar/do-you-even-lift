@@ -16,5 +16,4 @@ angular.module('yourFace')
     })
     .controller('yourFaceController', function($scope, peopleFactory) {
         $scope.people = peopleFactory;
-        $scope.index = 2;
     });
