@@ -1,5 +1,9 @@
 #!/bin/sh
-matchbox-window-manager &
-npm start >> ~/errors.log
+
+LOGFILE='/tmp/debug.log'
+#LOGFILE='/dev/null'
+
 export DISPLAY=:0
-chromium-browser --kiosk http://localhost:5000/
+nohup matchbox-window-manager >> $LOGFILE &
+nohup npm start >> $LOGFILE &
+nohup chromium-browser --kiosk http://localhost:5000/ >> $LOGFILE &
