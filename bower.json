@@ -7,6 +7,11 @@
     "angular": "~1.2.16",
     "angular-resource": "~1.2.16",
     "ng-FitText.js": "~2.3.0",
-    "angular-carousel": "~0.2.2"
+    "angular-carousel": "~0.2.2",
+    "angular-flexslider": "~1.0.0"
+  },
+  "resolutions": {
+    "jquery": "~2.1.0",
+    "angular": "~1.2.16"
   }
 }
