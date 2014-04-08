@@ -12,7 +12,7 @@ angular.module('yourFace', ['ngResource', 'ngFitText', 'angular-carousel'])
 
 angular.module('yourFace')
     .factory('peopleFactory', function($resource) {
-        return window.data.people;
+        return _.shuffle(window.data.people);
     })
     .controller('yourFaceController', function($scope, $interval, peopleFactory) {
         $scope.people = peopleFactory;
@@ -23,5 +23,5 @@ angular.module('yourFace')
             } else {
                 $scope.index = 0;
             }
-        }, 8 * 1000)
+        }, 7 * 1000)
     });

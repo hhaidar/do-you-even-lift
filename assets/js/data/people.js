@@ -5,7 +5,7 @@
             "id": "wolever",
             "firstname": "David",
             "lastname": "Wolever",
-            "title": "Director, Python Canada",
+            "title": "Director, PyCon Canada",
             "twitter": "@wolever",
             "github": "wolever",
             "picture": "david.jpg"
@@ -26,6 +26,18 @@
             "title": "Dev-ops Jesus",
             "github": "jalli",
             "picture": "jarl.jpg",
+            "scale": {
+                "lastname": 0.7
+            }
+        },
+        {
+            "id": "ram",
+            "firstname": "Ramanan",
+            "lastname": "Sivaranjan",
+            "title": "Lead Developer, SDE",
+            "github": "funkaoshi",
+            "twitter": "funkaoshi",
+            "picture": "ram.jpg",
             "scale": {
                 "lastname": 0.7
             }
