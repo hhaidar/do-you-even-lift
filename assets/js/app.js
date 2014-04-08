@@ -23,5 +23,5 @@ angular.module('yourFace')
             } else {
                 $scope.index = 0;
             }
-        }, 5000)
+        }, 8 * 1000)
     });
