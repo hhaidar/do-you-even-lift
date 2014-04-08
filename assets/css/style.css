@@ -1375,13 +1375,19 @@ body {
   padding: 0;
   margin: 0;
 }
+.rn-carousel-container {
+  background-image: url('../img/python.png');
+  -webkit-animation: background-move 200s linear infinite;
+  -moz-animation: background-move 200s linear infinite;
+  -o-animation: background-move 200s linear infinite;
+  animation: background-move 200s linear infinite;
+}
 .yf-people {
   position: absolute;
   top: 0;
   left: 0;
 }
 .yf-person {
-  background-image: url('../img/python.png');
   position: relative;
   cursor: -webkit-grab;
   cursor: -moz-grab;
@@ -1389,10 +1395,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-animation: background-move 200s linear infinite;
-  -moz-animation: background-move 200s linear infinite;
-  -o-animation: background-move 200s linear infinite;
-  animation: background-move 200s linear infinite;
 }
 .yf-person:active {
   cursor: -webkit-grabbing;

@@ -40,6 +40,12 @@ body {
     margin: 0;
 }
 
+.rn-carousel-container {
+    background-image: url('../img/python.png');
+    .animation(background-move 200s linear infinite);
+        
+}
+
 .yf-people {
     position: absolute;
     top: 0;
@@ -47,12 +53,10 @@ body {
 }
 
 .yf-person {
-    background-image: url('../img/python.png');
     position: relative;
     cursor: -webkit-grab;
     cursor: -moz-grab;
     .user-select(none);
-    .animation(background-move 200s linear infinite);
     &:active {
         cursor: -webkit-grabbing;
         cursor: -moz-grabbing;
