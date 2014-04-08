@@ -13,10 +13,11 @@
     <script src="assets/js/vendor/angular-touch/angular-touch.js" type="text/javascript"></script>
     <script src="assets/js/vendor/angular-carousel/angular-carousel.js" type="text/javascript"></script>
     <script src="assets/js/vendor/ng-FitText.js/ng-FitText.js" type="text/javascript"></script>
-    <script src="assets/js/client.js"></script>
+    <script src="assets/js/data/people.js"></script>
+    <script src="assets/js/app.js"></script>
 </head>
     <body ng-app="yourFace" ng-controller="yourFaceController">
-        <ul rn-carousel class="yf-people">
+        <ul rn-carousel rn-carousel-index="index" class="yf-people">
             <li class="yf-person" ng-repeat="person in people">
                 <div class="yf-person-picture">
                     <img src="assets/pictures/{$ person.picture || 'anonymoose.jpg' $}" alt="{$ person.firstname $} {$ person.lastname $}" />

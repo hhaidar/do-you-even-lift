@@ -12,8 +12,10 @@ angular.module('yourFace', ['ngResource', 'ngFitText', 'angular-carousel'])
 
 angular.module('yourFace')
     .factory('peopleFactory', function($resource) {
-        return $resource('/people:person', {});
+        return window.data.people;
+        // return $resource('/people:person', {});
     })
     .controller('yourFaceController', function($scope, peopleFactory) {
-        $scope.people = peopleFactory.query()
+        $scope.people = peopleFactory;
+        $scope.index = 2;
     });
