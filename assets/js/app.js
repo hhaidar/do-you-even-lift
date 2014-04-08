@@ -18,6 +18,10 @@ angular.module('yourFace')
         $scope.people = peopleFactory;
         $scope.index = 0;
         $interval(function() {
-            $scope.index++;
-        }, 3000)
+            if ($scope.index < $scope.people.length - 1){
+                $scope.index++;
+            } else {
+                $scope.index = 0;
+            }
+        }, 5000)
     });
