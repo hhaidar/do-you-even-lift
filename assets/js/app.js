@@ -14,6 +14,10 @@ angular.module('yourFace')
     .factory('peopleFactory', function($resource) {
         return window.data.people;
     })
-    .controller('yourFaceController', function($scope, peopleFactory) {
+    .controller('yourFaceController', function($scope, $interval, peopleFactory) {
         $scope.people = peopleFactory;
+        $scope.index = 0;
+        $interval(function() {
+            $scope.index++;
+        }, 3000)
     });
