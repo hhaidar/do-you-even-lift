@@ -1389,8 +1389,7 @@ body {
 }
 .yf-person {
   position: relative;
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
+  cursor: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
