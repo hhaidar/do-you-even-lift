@@ -1377,10 +1377,10 @@ body {
 }
 .rn-carousel-container {
   background-image: url('../img/python.png');
-  -webkit-animation: background-move 200s linear infinite;
-  -moz-animation: background-move 200s linear infinite;
-  -o-animation: background-move 200s linear infinite;
-  animation: background-move 200s linear infinite;
+  -webkit-animation: background-move 200s linear infinite alternate;
+  -moz-animation: background-move 200s linear infinite alternate;
+  -o-animation: background-move 200s linear infinite alternate;
+  animation: background-move 200s linear infinite alternate;
 }
 .yf-people {
   position: absolute;
