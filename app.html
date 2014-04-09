@@ -17,7 +17,7 @@
     <script src="assets/js/app.js"></script>
 </head>
     <body ng-app="yourFace" ng-controller="yourFaceController">
-        <ul rn-carousel rn-carousel-index="index" class="yf-people">
+        <ul rn-carousel rn-carousel-index="index" rn-carousel-swipe="false" class="yf-people">
             <li class="yf-person" ng-repeat="person in people">
                 <div class="yf-person-picture">
                     <img src="assets/pictures/{$ person.picture || 'anonymoose.jpg' $}" alt="{$ person.firstname $} {$ person.lastname $}" />

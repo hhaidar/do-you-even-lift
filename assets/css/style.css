@@ -1389,15 +1389,6 @@ body {
 }
 .yf-person {
   position: relative;
-  cursor: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-.yf-person:active {
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
 }
 .yf-person-picture {
   width: 50%;
