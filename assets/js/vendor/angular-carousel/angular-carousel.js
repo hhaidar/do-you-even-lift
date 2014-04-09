@@ -266,16 +266,21 @@ angular.module('angular-carousel')
                         var elapsed, delta;
 
                         if (amplitude) {
+                            /**
                             elapsed = Date.now() - timestamp;
                             delta = amplitude * Math.exp(-elapsed / timeConstant);
                             if (delta > rubberTreshold || delta < -rubberTreshold) {
                                 scroll(destination - delta);
+                            **/
                                 /* We are using raf.js, a requestAnimationFrame polyfill, so
                                 this will work on IE9 */
+                            /**
                                 requestAnimationFrame(autoScroll);
                             } else {
                                 goToSlide(destination / containerWidth);
                             }
+                            **/
+                            goToSlide(destination / containerWidth);
                         }
                     }
 
