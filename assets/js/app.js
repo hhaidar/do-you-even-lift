@@ -19,14 +19,17 @@ angular.module('yourFace')
         $scope.index = 0;
         $('body').keydown(function(e) {
             switch(e.keyCode) {
+                // P
                 case 80:
                     $scope.toggle();
                     break;
+                // Left / Up
                 case 37:
                 case 40:
                     $scope.stop();
                     $scope.previous();
                     break;
+                // Right / Down
                 case 38:
                 case 39:
                     $scope.stop();
