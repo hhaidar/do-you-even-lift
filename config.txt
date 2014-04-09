@@ -64,4 +64,3 @@ hdmi_mode=16
 #hdmi_pixel_encoding=2
 #hdmi_group=2
 #hdmi_mode=82
-
