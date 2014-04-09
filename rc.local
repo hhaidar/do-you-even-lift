@@ -33,6 +33,9 @@ printf "===> Resetting frame-buffer to %dx%dx%d...\n" $_XRES $_YRES $_DEPTH
 fbset --all --geometry $_XRES $_YRES $_XRES $_YRES $_DEPTH -left 0 -right 0 -upper 0 -lower 0;
 sleep 1;
 
+
+nohup bash -c '/usr/bin/inotifywait -qq -e attrib -e modify /home/pi/your-face-masterpiece/touch_me ; sleep 1; reboot >> /home/pi/your-face-masterpiece.log' &
+
 if [ -f /boot/xinitrc ]; then
 	ln -fs /boot/xinitrc /home/pi/.xinitrc;
 	su - pi -c 'startx' &
