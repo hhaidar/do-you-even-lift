@@ -3,4 +3,7 @@
 LOGFILE='/tmp/debug.log'
 #LOGFILE='/dev/null'
 
-cd /home/pi/your-face-masterpiece && git pull >> $LOGFILE
+if [ `/usr/bin/git diff origin | wc -l` -gt 2 ]; then
+  cd /home/pi/your-face-masterpiece && /usr/bin/git pull >> $LOGFILE
+  killall -HUP chromium >> $LOGFILE
+fi
