@@ -1,8 +1,8 @@
 #!/bin/sh
 
 LOGFILE='/home/pi/your-face-masterpiece.log'
-
-if [ `/usr/bin/git diff origin | wc -l` -gt 2 ]; then
-  cd /home/pi/your-face-masterpiece && /usr/bin/git pull >> $LOGFILE
+cd /home/pi/your-face-masterpiece
+if /usr/bin/git pull | grep -vq 'Already up-to-date.'; then
   killall -HUP chromium >> $LOGFILE
+  echo "Updated from Git at `date`"
 fi
