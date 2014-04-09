@@ -41,6 +41,14 @@
             "scale": {
                 "lastname": 0.7
             }
+        },
+        {
+            "id": "anonymoose",
+            "firstname": "Anony",
+            "lastname": "Moose",
+            "title": "Who's asking?",
+            "github": "???",
+            "twitter": "???"
         }
     ];
 })(window);
