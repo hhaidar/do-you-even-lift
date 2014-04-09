@@ -23,9 +23,11 @@ angular.module('yourFace')
                     $scope.toggle();
                     break;
                 case 37:
+                case 40:
                     $scope.stop();
                     $scope.previous();
                     break;
+                case 38:
                 case 39:
                     $scope.stop();
                     $scope.next();
