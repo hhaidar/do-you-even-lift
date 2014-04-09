@@ -40,12 +40,14 @@ angular.module('yourFace')
             $scope.timer = $interval(function() {
                 $scope.next();
             }, 7 * 1000);
+            $scope.paused = false;
         };
         $scope.stop = function() {
             if ($scope.timer) {
                 $interval.cancel($scope.timer);
             }
             $scope.timer = null;
+            $scope.paused = true;
         };
         $scope.toggle = function() {
             if ($scope.timer) {
