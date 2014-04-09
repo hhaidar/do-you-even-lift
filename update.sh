@@ -5,4 +5,5 @@ cd /home/pi/your-face-masterpiece
 if /usr/bin/git pull | grep -vq 'Already up-to-date.'; then
   killall -HUP chromium >> $LOGFILE
   echo "Updated from Git at `date`"
+ /home/pi/your-face-masterpiece/deploy.sh
 fi
