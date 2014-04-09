@@ -31,7 +31,6 @@ while true; do
 	matchbox-window-manager -use_titlebar no -use_cursor no &
 
 	# Start the browser (See http://peter.sh/experiments/chromium-command-line-switches/)
-	# chromium  --app=file:///home/pi/your-face-masterpiece/app.html
-    midori -e Fullscreen -a file:///home/pi/your-face-masterpiece/app.html
+	chromium  --app=file:///home/pi/your-face-masterpiece/app.html
 
 done;
