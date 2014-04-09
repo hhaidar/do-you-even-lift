@@ -40,7 +40,6 @@ arm_freq=900
 
 # for more options see http://elinux.org/RPi_config.txt
 
-
 # NOOBS Auto-generated Settings:
 hdmi_force_hotplug=1
 config_hdmi_boost=4
